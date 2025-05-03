@@ -15,7 +15,7 @@ payer_totals = {
 pro_run=True
 while pro_run :
   
-  print('May I help you?')
+  print('Please select an action: ')
   command=input('Add, Transfer, List, Status, Delete, Exit: ').upper()
   if command =='EXIT':
     #Exit - to exit from this app!
