@@ -67,14 +67,15 @@ while pro_run :
 
   elif command=='LIST':
     #List - Show the current list and sum total in each items[food,rent,transger,else]
-       for i, item in enumerate(payment_list_AB):
-         print(f'{i}:{item}')
-         usage_totals = {
+       usage_totals = {
             'Food': 0.0,
             'Rent': 0.0,
             'Transfer':0.0,
             'Else': 0.0
-          }
+       }
+       for i, item in enumerate(payment_list_AB):
+         print(f'{i}:{item}')
+         
        for index, item in enumerate(payment_list_AB):
            usage_totals[item['Usage']]+=item['Amount']
        print(f'{'-'*5}Totals{'-'*5}')
@@ -96,11 +97,18 @@ while pro_run :
           receiver = name1
        else:
            print('Invalid selection')
+           print()
+           continue
 
        
        date=input('Date(e.g. 2025-04-22): ')
-       amount1=float(input('Amount(JPY): '))
-
+       try:
+            amount1 = float(input('Amount(JPY): '))
+            break  
+       except ValueError:
+            print('Please enter a valid number.')
+            print()
+            continue
        
        item2={
              'Payer':receiver,
