@@ -145,9 +145,13 @@ while pro_run :
                       usage_totals[usage] -= amount
                     print('Delete success!')
                     print()
-                 else :
+                 elif answer4 == 'No':
                      print('All right! See you!')
                      print()
+                 else:
+                     print('Invalid input!')
+                     print()
+                     continue
           else :
                   print(f'Please input 0 to {len(payment_list_AB)}')    
                   print()  
