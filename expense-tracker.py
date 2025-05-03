@@ -41,7 +41,15 @@ while pro_run :
               
              if currency in currencies:
                 rate=currencies[currency]
-                amount=float(input('Amount: '))
+                         
+                try:
+                   amount = float(input('Amount: '))
+                   break  
+                except ValueError:
+                   print('Please enter a valid number.')
+                   print()
+                   continue
+
                 exchanged=round(exchange.get_exchange_amount(amount, rate),2)
                 print(f'Success! {currency} {amount}→ JPY {exchanged} !') 
                 item={
