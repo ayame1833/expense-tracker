@@ -24,25 +24,28 @@ In response to my husband's request for a expense-tracker app, I developed as fo
  ※All tracker is recorded in JPY for our transfer.If you would like to record your currencies, please change <add> command.
 
 ## Sample Run
-**Welcome to Expense-tracker!
+Welcome to Expense-tracker!
 Participant A: XX
 Participant B: YY
 Participants set
-**-----------------------
-Please select an action:
-Add, Transfer, List, Status, Delete, Exit: Add
-Payer: XX
-Date(e.g. 2025-04-22): 2025-04-22
-Enter usage[Food, Rent, Else]: Food
-Enter currency to exchange from [AUD, USD, EUR, CNY, INR, JPY]: AUD
-Amount: 40
-Success! AUD 40.0 → JPY 3606.4 !
-< Added :2025-04-22*XX*Food* JPY: 3606.4 >
+
+Please select an action:\n
+Add, Transfer, List, Status, Delete, Exit: Add\n
+Payer: XX\n
+Date(e.g. 2025-04-22): 2025-04-22\n
+Enter usage[Food, Rent, Else]: Food\n
+Enter currency to exchange from [AUD, USD, EUR, CNY, INR, JPY]: AUD\n
+Amount: 40\n
+Success! AUD 40.0 → JPY 3606.4 !\n
+< Added :2025-04-22 XX Food JPY: 3606.4 >\n
 
 Please select an action:
 Add, Transfer, List, Status, Delete, Exit: Status
---------Status--------
+           Status
 YY should pay XX JPY 3606.40
+
+
+
 ----------------------
  
 
