@@ -104,7 +104,7 @@ while pro_run :
        date=input('Date(e.g. 2025-04-22): ')
        try:
             amount1 = float(input('Amount(JPY): '))
-            break  
+             
        except ValueError:
             print('Please enter a valid number.')
             print()
