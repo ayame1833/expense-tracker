@@ -11,6 +11,12 @@ payer_totals = {
             name1.capitalize(): 0.0,
             name2.capitalize(): 0.0,
           }
+usage_totals = {
+            'Food': 0.0,
+            'Rent': 0.0,
+            'Transfer':0.0,
+            'Else': 0.0
+}
 
 pro_run=True
 while pro_run :
