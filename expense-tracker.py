@@ -44,7 +44,7 @@ while pro_run :
                          
                 try:
                    amount = float(input('Amount: '))
-                   break  
+                    
                 except ValueError:
                    print('Please enter a valid number.')
                    print()
